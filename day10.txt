@@ -1,0 +1,81 @@
+=> What is while loop? When do we use while loop?
+=> What is Function ? When do we use functions?
+=> How do we use multiple variables in single line? What are map methods parameters?
+=> Positional Arguments and Keyword Arguments?
+
+1. While loop is a control flow statement, that runs continuely until it reaches specified condition.  
+   Ex:-
+   temp = 0
+   while temp<=7:
+      print(temp)
+      temp += 1
+  print("End")
+  => Incrementing temp should be should done inside while loop otherwise it goes to infinity.
+
+  
+1. How to read inputs from users?
+
+=> To read input from users
+   a = input("Enter any number")
+   type(a)   ==  <class str>
+   a = int(input())
+   type(a)   ==  <class int>
+=> To read multiple inputs in single line.
+   => map() method.
+   a, b = map(int, input("Enter numbers").split(" "))
+   print(a,b)
+
+   
+   Ex:- empty = []
+        n = int(input("Enter Input Elements"))
+        for i in range(n):
+            empty.append(input("Enter a number"))
+        print(empty)
+   ==> Output:  Enter Input Elements3
+                Enter a number1
+                Enter a number2
+                Enter a number3
+                ['1', '2', '3']
+
+=> To Read a list in single line.
+   empty = list(map(int, input("Enter numbers").split(" ")))
+   print(empty)
+   ==> output:  Enter numbers1 2 3 4 5
+                [1, 2, 3, 4, 5]
+
+
+2. Functions:-
+   functions are used to ignore repeated works, by decreasing length of code.
+   => "def" keyword
+     Ex:-
+     def subtraction(a,b):
+     print(a-b)
+
+     subtraction(1,7)
+     subtraction(12,7)
+
+   => By using single function we can do multiple works.
+
+3. Concatenation   || f string.
+  => f string
+  a = "name"
+  print(f"hello {a}")
+  => Concatenation
+  a = "name"
+  print("hello " + a)
+
+  EX:-
+   def greet(name, location):
+         print(f"hello{name}")
+         print(f"are you from{location}")
+           
+   greet("sai", "Hyderabad")
+   greet(location="mancherial", name="laxmi")
+
+4. Method and functions are same 
+       => If we declare functions inside OOPS, it is method.
+       => If it is outside OOPS => Functions.
+  method created in object useful to that object only, But Functions are universal.
+
+
+  
