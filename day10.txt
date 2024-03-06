@@ -9,11 +9,11 @@
    while temp<=7:
       print(temp)
       temp += 1
-  print("End")
+   print("End")
   => Incrementing temp should be should done inside while loop otherwise it goes to infinity.
 
   
-1. How to read inputs from users?
+2. How to read inputs from users through single and multiple lines?
 
 => To read input from users
    a = input("Enter any number")
@@ -22,6 +22,7 @@
    type(a)   ==  <class int>
 => To read multiple inputs in single line.
    => map() method.
+   => Parameters of map() are input(), split(), int.
    a, b = map(int, input("Enter numbers").split(" "))
    print(a,b)
 
@@ -44,9 +45,10 @@
                 [1, 2, 3, 4, 5]
 
 
-2. Functions:-
-   functions are used to ignore repeated works, by decreasing length of code.
-   => "def" keyword
+3. Functions:-
+   Function is a self contained block of code to perform a specific task and reusable.
+   To ignore repeated works, by decreasing length of code.
+   => Function keyword == "def" 
      Ex:-
      def subtraction(a,b):
      print(a-b)
@@ -56,7 +58,7 @@
 
    => By using single function we can do multiple works.
 
-3. Concatenation   || f string.
+4. Concatenation   || f string.
   => f string
   a = "name"
   print(f"hello {a}")
@@ -64,13 +66,23 @@
   a = "name"
   print("hello " + a)
 
-  EX:-
+5. Positional Arguments:-
+     Arguments given in function call  will be matched with the parameters given infunction call depending on the position or order.
+   Ex:-
    def greet(name, location):
          print(f"hello{name}")
          print(f"are you from{location}")
            
    greet("sai", "Hyderabad")
-   greet(location="mancherial", name="laxmi")
+
+6. Keyword Argument:-
+     Arguments given in function call will be named with some keyword, those keywords are used as parameters in function definition.
+   Values of that parameters is matched with the values of same keyword in func call.  
+  EX:-
+   def greet(name, location):
+         print(f"hello{name}")
+         print(f"are you from{location}")
+   greet(location = "mancherial" , name="laxmi")
 
 4. Method and functions are same 
        => If we declare functions inside OOPS, it is method.
