@@ -77,7 +77,7 @@
 
 6. Keyword Argument:-
      Arguments given in function call will be named with some keyword, those keywords are used as parameters in function definition.
-   Values of that parameters is matched with the values of same keyword in func call.  
+   Parameters is matched with the values of same keyword in func call.  
   EX:-
    def greet(name, location):
          print(f"hello{name}")
